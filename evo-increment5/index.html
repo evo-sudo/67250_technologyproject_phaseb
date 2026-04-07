@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="./static/script.js" defer></script>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js" defer></script>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+    <header class="header">
+        <img id="logo" src="./static/ISlogo.png" alt="MonoMuse Museum Logo">
+
+        <nav class="nav_bar" id="myNav">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a id="cta" href="views/buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+    </header>
+
+        <main class="main">
+            <h2 id="greeting">Welcome to the MonoMuse Museum</h2>
+
+            <p>
+                MonoMuse is a contemporary museum dedicated to exploring
+                the intersection of art, technology, and human creativity.
+                Through immersive exhibitions, interactive installations,
+                and rotating collections, MonoMuse invites visitors to discover
+                how digital innovation is transforming the way we create, experience,
+                and understand art. Whether you are a first-time visitor or a returning
+                member, our exhibitions offer new perspectives on the role of technology
+                in culture and everyday life. Plan your visit to experience cutting-edge
+                exhibitions, hands-on experiences, and events designed to inspire curiosity and creativity.
+            </p>
+
+            <p id="shortIntro">
+                Discover interactive exhibits, rotating collections, and immersive experiences designed for visitors of all ages.
+            </p>
+
+            <p id="longIntro">
+                MonoMuse combines technology, science, and creativity to create unforgettable museum experiences.
+                Visitors can explore projection-mapped exhibits, hands-on fossil discovery stations, and educational programs
+                designed to inspire curiosity about the natural world and innovation.
+            </p>
+
+            <button id="readMoreBtn">Read More</button>
+            <button id="readLessBtn">Read Less</button>
+        </main>
+
+        <figure class="main_figure">
+            <!-- put homepage image here if required -->
+        </figure>
+
+        <footer class="footer">
+            CopyRights <span id="copyYear"></span> MonoMouse. All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../static/script.js" defer></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+<header class="header">
+    <img id="logo" src="../static/ISlogo.png" alt="MonoMuse Museum Logo">
+
+    <nav class="nav_bar" id="myNav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a id="cta" href="buytickets.html">Buy Tickets</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+    </nav>
+</header>
+
+
+        <main class="main">
+            <h2>Mission Statement</h2>
+            <p>Our mission is to inspire curiosity and foster a love for learning about the natural world.</p>
+            <h2>Museum Feature Video</h2>
+            <iframe
+                class="museum-video"
+                src="https://www.youtube.com/embed/ySpFHabhwtI?si=QYqtF717zLRzoO8e"
+                title="Museum video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+            <h2>Milestones</h2>
+            <ul>
+                <li>Founded in 2020</li>
+                <li>First exhibition in 2021</li>
+                <li>Reached 10,000 visitors in 2022</li>
+            </ul>
+            <h2>Visit Us</h2>
+            <div id="map"></div>
+        </main>
+
+        <footer class="footer">
+            CopyRights <span id="copyYear"></span> MonoMouse. All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/script.js" defer></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+<header class="header">
+    <img id="logo" src="../static/ISlogo.png" alt="MonoMuse Museum Logo">
+
+    <nav class="nav_bar" id="myNav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a id="cta" href="buytickets.html">Buy Tickets</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+    </nav>
+</header>
+        <figure class="main_figure">
+            <img src="../static/Dino.jpg" alt="Dinosaur" width="400">
+        </figure>
+        <main class="main">
+            <h3>Exhibition 1: Projection Mapping</h3>
+            <p>Explore real life projection of what dinosaurs might have looked like.</p>
+
+            <h3>Exhibition 2: Fossil Discoveries</h3>
+            <p>Take archaeology into your own hands and chip away at ancient debris to discover dinosaur fossils.</p>
+        </main>
+
+        <footer class="footer">
+            CopyRights <span id="copyYear"></span> MonoMouse. All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+</html>
