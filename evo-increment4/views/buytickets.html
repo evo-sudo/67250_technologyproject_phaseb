@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/script.js" defer></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+        <header class="header">
+            <img id="logo" src="../static/ISlogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html" class="active">Buy Tickets</a>
+
+        </nav>
+
+        <main class="main">
+            <h2>Buy Tickets</h2>
+
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Ticket Type</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>April 10, 2026</td>
+                    <td>General Admission</td>
+                    <td>$18</td>
+                    <td><button onclick="showPurchaseForm('April 10, 2026')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 17, 2026</td>
+                    <td>General Admission</td>
+                    <td>$18</td>
+                    <td><button onclick="showPurchaseForm('April 17, 2026')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 24, 2026</td>
+                    <td>General Admission</td>
+                    <td>$18</td>
+                    <td><button onclick="showPurchaseForm('April 24, 2026')">Buy Now</button></td>
+                </tr>
+            </table>
+
+            <form id="purchaseForm">
+                <h3>Purchase Tickets</h3>
+
+                <label for="buyerName">Name:</label>
+                <input type="text" id="buyerName" name="buyerName" required>
+
+                <label for="buyerEmail">Email:</label>
+                <input type="email" id="buyerEmail" name="buyerEmail" required>
+
+                <label for="ticketQuantity">Number of Tickets:</label>
+                <input type="number" id="ticketQuantity" name="ticketQuantity" min="1" max="10" required>
+
+                <label for="selectedDate">Selected Date:</label>
+                <input type="text" id="selectedDate" name="selectedDate" readonly>
+
+                <input type="button" value="Submit" onclick="submitPurchase()">
+            </form>
+        </main>
+
+        <footer class="footer">
+            CopyRights <span id="copyYear"></span> MonoMouse. All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+</html>
